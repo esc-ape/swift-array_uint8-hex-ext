@@ -11,6 +11,7 @@ final class Array_UInt8HexExtTests: XCTestCase {
     
     func testCreateArrayUInt8FromPrefixedHex() {
         let d = Array<UInt8>(hex: "0xabcdef")
+        
         XCTAssertEqual(d[0], 0xab)
         XCTAssertEqual(d[1], 0xcd)
         XCTAssertEqual(d[2], 0xef)
